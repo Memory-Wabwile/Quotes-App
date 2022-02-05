@@ -6,5 +6,6 @@
 <div>
     <button type="button" class="btn btn-outline-primary"><span class="bi bi-hand-thumbs-up-fill"></span> Upvote</button>
     <button type="button" class="btn btn-outline-danger"><span class="bi bi-hand-thumbs-down-fill"></span> Downvote</button>
-    <p>This quote has been here for {{quotee.completeDate|dayCount}} days </p>
+    <p>This quote has been here for {{quotee.completeDate|dayCount}} days 
+    <span><button (click)= 'quoteDelete(true)' type="button" class="btn ms-5"> <span class="bi bi-trash red-color"></span></button></span></p>
 </div>
