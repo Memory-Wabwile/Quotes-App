@@ -20,9 +20,15 @@ export class QuoteDetailsComponent implements OnInit {
 
   // For counting likes
 
-  numberOfLikes : number=0;
-  likeButtonClick(){
-    this.numberOfLikes++
+  upVotes : number=0;
+  upVoteButtonClick(){
+    this.upVotes++
+  }
+
+  // For counting dislikes
+  downVotes : number=0;
+  downVoteButtonClick(){
+    this.downVotes++
   }
   constructor() { }
 
