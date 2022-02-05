@@ -12,7 +12,7 @@ export class DayCountPipe implements PipeTransform {
     var dateDifferenceSeconds = dateDifference*0.001;
     var dateCounter = dateDifferenceSeconds/secondsInDay;
 
-    if (dateCounter >= 1 && value > todaysTime){
+    if (dateCounter >= 1 &&  todaysTime>value){
       return dateCounter;
     }else{
     return 0;

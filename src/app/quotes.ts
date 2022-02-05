@@ -3,11 +3,13 @@ export class Quotes {
         quote: any;
         author: any;
         name: any;
-        constructor(id: number | any ,quote: string | any,author: string | any,name: string | any){
+        completeDate:any
+        constructor(id: number | any ,quote: string | any,author: string | any,name: string | any , completeDate:Date){
             this.id=id,
             this.quote=quote,
             this.author=author,
-            this.name=name
+            this.name=name,
+            this.completeDate=completeDate
         }
 //     id!: number;
 //     quote!: string;
