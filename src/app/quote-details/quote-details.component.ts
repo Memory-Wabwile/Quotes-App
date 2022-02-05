@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit ,Output, EventEmitter } from '@angular/core';
 import{Quotes} from '../quotes';
 
 @Component({
@@ -10,7 +10,10 @@ export class QuoteDetailsComponent implements OnInit {
 
   @Input()quotee: any;
   
-  goalDelete(complete:boolean){
+
+  @Output() isDone= new EventEmitter<boolean>();
+
+  quoteDelete(complete:boolean){
     this.isDone.emit(complete);
   }
 

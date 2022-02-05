@@ -6,7 +6,7 @@
         <div *ngFor="let quotee of quotes">
             {{quotee.quote}}
             <div >
-                <app-quote-details [quotee]= "quotee" (isDone)="deleteQuote($event,i)"></app-quote-details>
+                <app-quote-details [quotee]= "quotee" (isDone)="deleteQuote($event,1)"></app-quote-details>
             </div> 
         </div>
         
