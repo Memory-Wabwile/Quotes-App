@@ -1,7 +1,9 @@
 <div class="container">
-  <h1>FAVOURITE QUOTES</h1>
-  <div class="col-md-10">
-    <app-quote-display></app-quote-display>
-
-  </div>
+    <h1>FAVOURITE QUOTES</h1>
+    <div class="col-md-9">
+        <div *ngFor="let quotee of quotes">
+            {{quotee.quote}}
+        </div>
+        <app-quote-details></app-quote-details>
+    </div>
 </div>
