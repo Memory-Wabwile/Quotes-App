@@ -17,6 +17,13 @@ export class QuoteDetailsComponent implements OnInit {
     this.isDone.emit(complete);
   }
 
+
+  // For counting likes
+
+  numberOfLikes : number=0;
+  likeButtonClick(){
+    this.numberOfLikes++
+  }
   constructor() { }
 
   ngOnInit(): void {
