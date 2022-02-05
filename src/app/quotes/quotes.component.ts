@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import{Quotes}from '../quotes';
+import{Quotes} from '../quotes';
 
 @Component({
   selector: 'app-quotes',
@@ -9,17 +9,16 @@ import{Quotes}from '../quotes';
 export class QuotesComponent implements OnInit {
 
   quotes:Quotes[]=[
-    {id:1,quote:'Life is what happens when you are busy making other plans.' , author:'John Lennon' ,name:'John Lennon'},
-    {id:2,quote:'The greatest glory in living lies not in never falling, but in rising every time we fall' , author:'Nelson Mandela' ,name:'Nelson Mandela'},
-    {id:3,quote:'Live as if you were to die tomorrow. Learn as if you were to live forever.' , author:'Mahatma Gandhi' ,name:'Mahatma Gandhi'},
-    {id:4,quote:'Be who you are and say what you feel, because those who mind don’t matter and those who matter don’t mind.' , author:'Bernard M. Baruch' ,name:'Bernard M. Baruch'},
-    {id:5,quote:'If life were predictable it would cease to be life, and be without flavor.' , author:'Eleanor Roosevelt' ,name:'Eleanor Roosevelt'},
+    new Quotes (1,'Life is what happens when you are busy making other plans.' , 'John Lennon' ,'John Lennon'),
+    new Quotes(2,'The greatest glory in living lies not in never falling, but in rising every time we fall' , 'Nelson Mandela' ,'Nelson Mandela'),
+    new Quotes(3,'Live as if you were to die tomorrow. Learn as if you were to live forever.' , 'Mahatma Gandhi' ,'Mahatma Gandhi'),
+    new Quotes (4,'Be who you are and say what you feel, because those who mind don not matter and those who matter do not mind.' , 'Bernard M. Baruch' ,'Bernard M. Baruch'),
+    new Quotes(5,'If life were predictable it would cease to be life, and be without flavor.' , 'Eleanor Roosevelt' ,'Eleanor Roosevelt'),
     
   ];
 
   constructor() { }
 
-  ngOnInit(): void {
-  }
+  ngOnInit() :void {}
 
 }
