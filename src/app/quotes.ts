@@ -4,4 +4,4 @@ export class Quotes {
     author!: string;
     name!: string;
 }
-
+ 
