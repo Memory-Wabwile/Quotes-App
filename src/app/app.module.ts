@@ -6,9 +6,10 @@ import { AppComponent } from './app.component';
 import { QuotesComponent } from './quotes/quotes.component';
 
 import { QuoteDetailsComponent } from './quote-details/quote-details.component';
+import { DayCountPipe } from './day-count.pipe';
 
 @NgModule({
-  declarations: [AppComponent, QuotesComponent, QuoteDetailsComponent],
+  declarations: [AppComponent, QuotesComponent, QuoteDetailsComponent, DayCountPipe],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
