@@ -8,8 +8,9 @@ import{Quotes} from '../quotes';
 })
 export class QuoteDetailsComponent implements OnInit {
 
-  @Input()
-  quotee!: Quotes;
+  @Input()quotee: any;
+  
+  
 
   constructor() { }
 
