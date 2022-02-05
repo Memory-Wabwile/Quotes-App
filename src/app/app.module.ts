@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -10,8 +11,14 @@ import { DayCountPipe } from './day-count.pipe';
 import { QuotesFormComponent } from './quotes-form/quotes-form.component';
 
 @NgModule({
-  declarations: [AppComponent, QuotesComponent, QuoteDetailsComponent, DayCountPipe, QuotesFormComponent],
-  imports: [BrowserModule, AppRoutingModule],
+  declarations: [
+    AppComponent,
+    QuotesComponent,
+    QuoteDetailsComponent,
+    DayCountPipe,
+    QuotesFormComponent,
+  ],
+  imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })

@@ -6,18 +6,27 @@
   <form (ngSubmit)='submitGoal()' #goalForm='ngForm'>
     <div class="form-group">
 
-      <label for="name">Name</label>
+      <label for="name">Authors Name</label>
       <input type="text" required class="form-control" id="name" [(ngModel)]="newGoal.name" name="name" #name='ngModel'
         required>
       <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
         <p>Name is required</p>
       </div>
     </div>
+    <div class="form-group">
+
+        <label for="name">Your Name</label>
+        <input type="text" required class="form-control" id="name" [(ngModel)]="newGoal.name" name="name" #name='ngModel'
+          required>
+        <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
+          <p>Name is required</p>
+        </div>
+      </div>
     <!-- Testing to see if we get any data -->
-    Display {{newGoal.name}}
+    <!-- Display {{newGoal.name}} -->
 
     <div class="form-group">
-      <label for="description">Description</label>
+      <label for="description">The Quote</label>
       <textarea class="form-control" id="description" rows="4" [(ngModel)]="newGoal.description" name="description"
         #description="ngModel" required></textarea>
       <div [hidden]="description.valid || description.pristine" class="alert alert-danger">
