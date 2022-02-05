@@ -9,10 +9,12 @@ import{Quotes} from '../quotes';
 export class QuotesFormComponent implements OnInit {
 
 
-  newGoal = new Quote(0,"","",new Date());
-  @Output() addQuote = new EventEmitter<Quote>();
+  newQuote = new Quotes(0,"","","",new Date());
+  @Output() addQuote = new EventEmitter<Quotes>();
+  
+  // addNewQuote:Quotes | undefined;
 
-  submitGoal(){
+  submitQuote(){
     this.addQuote.emit(this.newQuote);
       }
   constructor() { }
