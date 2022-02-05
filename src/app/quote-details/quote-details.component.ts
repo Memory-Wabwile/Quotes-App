@@ -10,7 +10,9 @@ export class QuoteDetailsComponent implements OnInit {
 
   @Input()quotee: any;
   
-  
+  goalDelete(complete:boolean){
+    this.isDone.emit(complete);
+  }
 
   constructor() { }
 
