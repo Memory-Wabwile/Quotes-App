@@ -3,7 +3,7 @@
   </button>
 
 
-  <form (ngSubmit)='submitQuote()' #goalForm='ngForm'>
+  <form (ngSubmit)='submitQuote()' #quoteForm='ngForm'>
     <div class="form-group">
 
       <label for="author">Authors Name</label>
@@ -36,7 +36,7 @@
 
 
     <div class="form-group">
-      <label for="completeDate">Completion</label>
+      <label for="completeDate">Date added </label>
       <input type='date' id="completeDate" [(ngModel)]="newQuote.completeDate" name="completeDate" #completeDate="ngModel"
         required>
       <div [hidden]="completeDate.valid || completeDate.pristine" class="alert alert-danger">
