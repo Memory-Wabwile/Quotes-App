@@ -59,7 +59,7 @@ export class QuotesComponent implements OnInit {
       );
 
       if (toDelete) {
-        this.quotes.splice(index, 1);
+        this.quotes.splice(index,1)
       }
     }
   }
