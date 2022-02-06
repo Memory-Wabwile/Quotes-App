@@ -1,57 +1,6 @@
-<button type="button" class="btn btn-primary  " data-toggle="modal" data-target="#modelId">
-    Add Quote
-  </button>
-
-
-  <form (ngSubmit)='submitQuote()' #quoteForm='ngForm'>
-    <div class="form-group">
-
-      <label for="author">Authors Name</label>
-      <input type="text" required class="form-control" id="author" [(ngModel)]="newQuote.author" name="name" #author='ngModel'
-        required>
-      <div [hidden]="author.valid || author.pristine" class="alert alert-danger">
-        <p>Name is required</p>
-      </div>
-    </div>
-    <div class="form-group">
-
-        <label for="name">Your Name</label>
-        <input type="text" required class="form-control" id="name" [(ngModel)]="newQuote.name" name="name" #name='ngModel'
-          required>
-        <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
-          <p>Name is required</p>
-        </div>
-      </div>
-    <!-- Testing to see if we get any data -->
-    <!-- Display {{newGoal.name}} -->
-
-    <div class="form-group">
-      <label for="quote">The Quote</label>
-      <textarea class="form-control" id="quote" rows="4" [(ngModel)]="newQuote.quote" name="quote"
-        #quote="ngModel" required></textarea>
-      <div [hidden]="quote.valid || quote.pristine" class="alert alert-danger">
-        <p>Description is required</p>
-      </div>
-    </div>
-
-
-    <div class="form-group">
-      <label for="completeDate">Date added </label>
-      <input type='date' id="completeDate" [(ngModel)]="newQuote.completeDate" name="completeDate" #completeDate="ngModel"
-        required>
-      <div [hidden]="completeDate.valid || completeDate.pristine" class="alert alert-danger">
-        <p>Date is required</p>
-      </div>
-
-    </div>
-    <button type="submit" class="btn btn-success">Cancel </button>
-    <button type="submit" class="btn btn-success">Add </button>
-
-
-  </form>
-  <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  Launch demo modal
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-bs-target="#exampleModal">
+  Add Quote
 </button>
 
 <!-- Modal -->
@@ -59,16 +8,63 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <h5 class="modal-title" id="exampleModalLabel">Enter Your Favourite Quote</h5>
+        <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-        <button type="button" class="btn btn-primary">Add</button>
+
+        <form (ngSubmit)='submitQuote()' #quoteForm='ngForm'>
+          <div class="form-group">
+
+            <label for="author">Authors Name</label>
+            <input type="text" required class="form-control" id="author" [(ngModel)]="newQuote.author" name="name"
+              #author='ngModel' required>
+            <div [hidden]="author.valid || author.pristine" class="alert alert-danger">
+              <p>Name is required</p>
+            </div>
+          </div>
+          <div class="form-group">
+
+            <label for="name">Your Name</label>
+            <input type="text" required class="form-control" id="name" [(ngModel)]="newQuote.name" name="name"
+              #name='ngModel' required>
+            <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
+              <p>Name is required</p>
+            </div>
+          </div>
+          <!-- Testing to see if we get any data -->
+          <!-- Display {{newGoal.name}} -->
+
+          <div class="form-group">
+            <label for="quote">The Quote</label>
+            <textarea class="form-control" id="quote" rows="4" [(ngModel)]="newQuote.quote" name="quote"
+              #quote="ngModel" required></textarea>
+            <div [hidden]="quote.valid || quote.pristine" class="alert alert-danger">
+              <p>Description is required</p>
+            </div>
+          </div>
+
+
+          <div class="form-group">
+            <label for="completeDate">Date added </label>
+            <input type='date' id="completeDate" [(ngModel)]="newQuote.completeDate" name="completeDate"
+              #completeDate="ngModel" required>
+            <div [hidden]="completeDate.valid || completeDate.pristine" class="alert alert-danger">
+              <p>Date is required</p>
+            </div>
+
+          </div>
+
+
+
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+            <button type="button" class="btn btn-primary">Add</button>
+          </div>
+        </form>
       </div>
     </div>
+
   </div>
 </div>
