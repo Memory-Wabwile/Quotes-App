@@ -1,7 +1,7 @@
 
-<div>
+<div style="font-size: large;">
     <p style="font-style: italic;" > Author : {{quotee.author}} </p>
-    <p  >Posted by : <span  style="color: rgb(216, 32, 32); font-size: 1em;">{{quotee.name}} </span> on {{quotee.completeDate|date}} </p>
+    <p  >Posted by : <span  style="color: rgb(216, 32, 32);font-size: larger; ">{{quotee.name}} </span> on {{quotee.completeDate|date}} </p>
 </div>
 <div >
     <button  (click)="upVoteButtonClick()"type="button" class="btn btn-outline-primary me-5"> {{upVotes}}  <span class="bi bi-hand-thumbs-up-fill"></span> Upvote</button>
