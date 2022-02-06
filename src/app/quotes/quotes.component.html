@@ -14,7 +14,7 @@
 
             <div  style=" box-shadow: 18px 18px 50px rgb(85, 83, 83); background-color: rgb(219, 212, 212);" *ngFor="let quotee of quotes" class="card" class="m-4">
               <div  class="card-body m-4">
-                <p  style="color: blue; font-size: 1.5em;" class="card-text"> " {{quotee.quote}} "</p>
+                <p  style="color: blue; font-size: 1.5em; " class="card-text"> " {{quotee.quote}} "</p>
 
                 <app-quote-details [quotee]="quotee" (isDone)="deleteQuote($event,1)"></app-quote-details>
               </div>
