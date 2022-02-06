@@ -1,3 +1,13 @@
 .main{
-    background-image: radial-gradient(circle, rgb(212, 0, 255),  rgb(98, 0, 128),rgb(148, 105, 228));
+  background-image:radial-gradient(circle, rgb(212, 0, 255),  rgb(98, 0, 128),rgb(148, 105, 228)) ;
+}
+
+/* radial-gradient(circle, rgb(212, 0, 255),  rgb(98, 0, 128),rgb(148, 105, 228)); */
+/* background-image : 'url("/assets/oceans2.jpg")' */
+.row{
+   display: inline-flex; 
+   flex-wrap: wrap;
+   width: 100%;
+  
+   
 }

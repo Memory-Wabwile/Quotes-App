@@ -2,6 +2,33 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.4.
 
+## Author
+Memory Wabwile
+https://github.com/Memory-Wabwile/Quotes-App
+
+## Description
+My Quotes App is an application that allows users to read the quotes on the browser, to upvote and downvote on the quotes, to add their own quotes and also to delete quotes.
+
+## Live Page 
+
+
+## Technologies Used
+
+1. HTML5 for front end<br>
+2. CSS for styling<br>
+3. Bootstrap for responsiveness<br>
+4. Angular CLI for functionality<br>
+
+
+## Known Bugs
+Highlight property directive doesn't work on the cards
+
+## Installation / Setup instruction
+To clone this repository , open the terminal then copy and run the following code 
+<li> git clone </li>
+<li> cd QuotesApp</li>
+<li> code .</li>
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
@@ -25,3 +52,19 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Contact Information
+For any querries email me at memorywabwile@gmail.com
+
+## License
+Copyright (c) {2021} *{Wabwile Memory}*
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.

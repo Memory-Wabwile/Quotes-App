@@ -12,21 +12,21 @@ export class QuotesComponent implements OnInit {
       1,
       'Life is what happens when you are busy making other plans.',
       'John Lennon',
-      'John Lennon',
+      'Samantha Tore',
       new Date(2020, 8, 10)
     ),
     new Quotes(
       2,
       'The greatest glory in living lies not in never falling, but in rising every time we fall',
       'Nelson Mandela',
-      'Nelson Mandela',
+      'Elvis Macharia',
       new Date(2021, 12, 12)
     ),
     new Quotes(
       3,
       'Live as if you were to die tomorrow. Learn as if you were to live forever.',
       'Mahatma Gandhi',
-      'Mahatma Gandhi',
+      'Namalwa Jhones',
       new Date(2022, 1, 1)
     ),
     new Quotes(
@@ -40,7 +40,7 @@ export class QuotesComponent implements OnInit {
       5,
       'If life were predictable it would cease to be life, and be without flavor.',
       'Eleanor Roosevelt',
-      'Eleanor Roosevelt',
+      'Rose Natalie',
       new Date(2019, 2, 1)
     ),
   ];
