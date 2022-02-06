@@ -1,22 +1,23 @@
 <div class="container-fluid">
-  <h1 style="color: white;margin-top: 4%; text-align: center; font-size: 4em; font-weight: 900;" >FAV<span
-    style="text-decoration:8px underline rgb(216, 32, 32);  text-underline-offset: 18px;">OURITE QUO</span>TE</h1>
+  <h1 style="color: white;margin-top: 4%;  text-align: center; font-size: 4em; font-weight: 900;">FAV<span
+      style="text-decoration:8px underline rgb(216, 32, 32);  text-underline-offset: 18px;">OURITE QUO</span>TE</h1>
   <div class="row">
 
     <div style="font-size:1.5em;" class="col-md-4">
       <app-quotes-form (addQuote)='addNewQuote($event)'></app-quotes-form>
     </div>
-    
 
 
-    <div  class="col-md-8">
+
+    <div class="col-md-8">
       <div class=" my-4 ">
         <div class="all-cards">
-          <div style="display: flex; flex-wrap: wrap; justify-content: space-evenly; flex-direction: row;" >
+          <div style="display: flex; flex-wrap: wrap; justify-content: space-evenly; flex-direction: row;">
 
-            <div  style=" box-shadow: 20px 20px 50px rgb(53, 50, 50); background-color: rgb(219, 212, 212);" *ngFor="let quotee of quotes" class="card" class="m-4 col-md-3">
-              <div  class="card-body m-4">
-                <p  style="color: blue; font-size: 1.5em; " class="card-text"> " {{quotee.quote}} "</p>
+            <div style=" box-shadow: 20px 20px 50px rgb(53, 50, 50); background-color: rgb(219, 212, 212); width:20rem;"
+              *ngFor="let quotee of quotes" class="card" class="m-4 col-md-3">
+              <div class="card-body m-4">
+                <p style="color: blue; font-size: 1.5em; " class="card-text"> " {{quotee.quote}} "</p>
 
                 <app-quote-details [quotee]="quotee" (isDone)="deleteQuote($event,1)"></app-quote-details>
               </div>

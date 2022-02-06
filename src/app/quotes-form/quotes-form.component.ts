@@ -18,9 +18,7 @@ export class QuotesFormComponent implements OnInit {
     this.addQuote.emit(this.newQuote);
     // form.resetForm();
   }
-  openModal(){
-    
-  }
+  openModal() {}
 
   constructor() {}
 
