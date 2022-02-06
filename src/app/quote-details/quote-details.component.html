@@ -4,7 +4,7 @@
     <p  >Posted by : <span  style="color: rgb(216, 32, 32);font-size: larger; ">{{quotee.name}} </span> on {{quotee.completeDate|date}} </p>
 </div>
 <div >
-    <button  (click)="upVoteButtonClick()"type="button" class="btn btn-outline-primary me-5"> {{upVotes}}  <span class="bi bi-hand-thumbs-up-fill"></span> Upvote</button>
+    <button  (click)="upVoteButtonClick()"type="button" class="btn btn-outline-primary me-5 mb-2"> {{upVotes}}  <span class="bi bi-hand-thumbs-up-fill"></span> Upvote</button>
     <button (click)="downVoteButtonClick()" type="button" class="btn btn-outline-danger"> {{downVotes}}<span class="bi bi-hand-thumbs-down-fill"></span> Downvote</button>
     <p class="mt-2" >This quote has been here for {{quotee.completeDate|dayCount}} days </p>
     <button style="margin-left: 38%;" (click)= 'quoteDelete(true)' type="button" class="btn">  <span  style="color: red; font-size: 2em;" class="bi bi-trash red-color"> </span></button>

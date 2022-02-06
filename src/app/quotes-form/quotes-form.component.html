@@ -20,20 +20,23 @@
 </div> -->
 
 
-<form (ngSubmit)='submitQuote()' #quoteForm='ngForm'>
-  <div class="form-group">
+<form  style="margin-top: 30%; margin-bottom:10%;  padding: 5%; border: 6px dotted blue;" (ngSubmit)='submitQuote()' #quoteForm='ngForm'>
+  
+  <h1 style="color: white; text-align: center;">Ad<span
+    style="text-decoration:5px underline rgb(216, 32, 32);  text-underline-offset: 18px;">d Quo</span>te</h1>
+  <div class="form-group mt-4">
 
-    <label for="author">Authors Name</label>
-    <input type="text" required class="form-control" id="author" [(ngModel)]="newQuote.author" name="name"
+    <label style="color: blue;font-weight:500;" for="author">Authors Name</label>
+    <input style="background-color: transparent; border: 2px solid rgb(114, 111, 111);" type="text" required class="form-control" id="author" [(ngModel)]="newQuote.author" name="name"
       #author='ngModel' required>
     <div [hidden]="author.valid || author.pristine" class="alert alert-danger">
       <p>Name is required</p>
     </div>
   </div>
-  <div class="form-group">
+  <div  class="form-group mt-4">
 
-    <label for="name">Your Name</label>
-    <input type="text" required class="form-control" id="name" [(ngModel)]="newQuote.name" name="name"
+    <label style="color: blue;font-weight:500;" for="name">Your Name</label>
+    <input style="background-color: transparent; border: 2px solid rgb(114, 111, 111);" type="text" required class="form-control" id="name" [(ngModel)]="newQuote.name" name="name"
       #name='ngModel' required>
     <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
       <p>Name is required</p>
@@ -42,9 +45,9 @@
   
   <!-- Display {{newGoal.name}} -->
 
-  <div class="form-group">
-    <label for="quote">The Quote</label>
-    <textarea class="form-control" id="quote" rows="4" [(ngModel)]="newQuote.quote" name="quote"
+  <div class="form-group mt-4">
+    <label style="color: blue; font-weight:500;" for="quote">The Quote</label>
+    <textarea style="background-color: transparent; border: 2px solid rgb(114, 111, 111);" class="form-control" id="quote" rows="5" [(ngModel)]="newQuote.quote" name="quote"
       #quote="ngModel" required></textarea>
     <div [hidden]="quote.valid || quote.pristine" class="alert alert-danger">
       <p>Description is required</p>
@@ -52,9 +55,9 @@
   </div>
 
 
-  <div class="form-group">
-    <label for="completeDate">Date added </label>
-    <input type='date' id="completeDate" [(ngModel)]="newQuote.completeDate" name="completeDate"
+  <div class="form-group mt-4">
+    <label  style=" font-weight:500; margin-right: 5%;color: blue;" for="completeDate">Date added </label>
+    <input style="background-color: transparent; border: 2px solid rgb(114, 111, 111);" type='date' id="completeDate" [(ngModel)]="newQuote.completeDate" name="completeDate"
       #completeDate="ngModel" required>
     <div [hidden]="completeDate.valid || completeDate.pristine" class="alert alert-danger">
       <p>Date is required</p>
@@ -65,8 +68,8 @@
 
 
 
-  <div class="modal-footer">
-    <button type="submit" class="btn btn-primary">Add</button>
+  <div style="margin-right: 23%;" class="modal-footer mt-4">
+    <button type="submit" class="btn btn-primary">Add Quote</button>
     <button type="reset" class="btn btn-danger" data-bs-dismiss="modal">Reset form</button>
    
   </div>
