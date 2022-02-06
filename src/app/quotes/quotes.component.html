@@ -1,18 +1,19 @@
-
-
 <div class="container">
 
-    <div class="navbar-nav ml-auto">
-        <app-quotes-form (addQuote)='addNewQuote($event)'></app-quotes-form>
-    </div>  
-    <h1>FAVOURITE QUOTES</h1>
-    <div class="col-md-9">
-        <div *ngFor="let quotee of quotes">
-            {{quotee.quote}}
-            <div >
-                <app-quote-details [quotee]= "quotee" (isDone)="deleteQuote($event,1)"></app-quote-details>
-            </div> 
+  <div class="navbar-nav ml-auto">
+    <app-quotes-form (addQuote)='addNewQuote($event)'></app-quotes-form>
+  </div>
+  <h1>FAVOURITE QUOTES</h1>
+
+  <div class="col-md-9">
+    <div class="all-cards">
+      <div *ngFor="let quotee of quotes" class="card">
+        <div class="card-body">
+          <p class="card-text">{{quotee.quote}}</p>
+
+          <app-quote-details [quotee]="quotee" (isDone)="deleteQuote($event,1)"></app-quote-details>
         </div>
-        
+      </div>
     </div>
+  </div>
 </div>
