@@ -14,8 +14,8 @@ https://memory-wabwile.github.io/Quotes-App/
 
 ## Design
 Landing page of the Quotes-App<br>
-<img src= url(./assets/whats1.jpeg)>
-<img src= url(./assets/whats2.jpeg)>
+<img src= "./assets/whats1.jpeg">
+<img src= "./assets/whats2.jpeg">
 
 ## Technologies Used
 
