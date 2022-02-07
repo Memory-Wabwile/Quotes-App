@@ -3,14 +3,19 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.4.
 
 ## Author
-Memory Wabwile
-https://github.com/Memory-Wabwile/Quotes-App
+Memory Wabwile<br>
+ https://github.com/Memory-Wabwile
 
 ## Description
 My Quotes App is an application that allows users to read the quotes on the browser, to upvote and downvote on the quotes, to add their own quotes and also to delete quotes.
 
 ## Live Page 
+https://memory-wabwile.github.io/Quotes-App/
 
+## Design
+Landing page of the Quotes-App<br>
+<img src= url(./assets/whats1.jpeg)>
+<img src= url(./assets/whats2.jpeg)>
 
 ## Technologies Used
 
@@ -25,7 +30,7 @@ Highlight property directive doesn't work on the cards
 
 ## Installation / Setup instruction
 To clone this repository , open the terminal then copy and run the following code 
-<li> git clone </li>
+<li> git clone https://memory-wabwile.github.io/Quotes-App/ </li>
 <li> cd QuotesApp</li>
 <li> code .</li>
 
