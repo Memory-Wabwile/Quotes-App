@@ -52,7 +52,7 @@ export class QuotesComponent implements OnInit {
     this.quotes.push(quote);
   }
 
-  deleteQuote(isDone: any, index:any) {
+  deleteQuote(isDone: boolean, index:number) {
     if (isDone) {
       let toDelete = confirm(
         `Are you sure you want to delete ${this.quotes[index].author}'s quote?`
@@ -63,6 +63,20 @@ export class QuotesComponent implements OnInit {
       }
     }
   }
+
+  // upvote(index: number) {
+  //   this.quotes[index].upvotes++;
+   
+  // }
+
+  // downvote(index: number) {
+  //   this.quotes[index].downvotes++;
+  // }
+
+  // totalVotes(index: number) {
+  //   this.quotes[index].totalVotes++;
+  // }
+
 
   constructor() {}
 

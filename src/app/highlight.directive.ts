@@ -9,18 +9,28 @@ export class HighlightDirective {
     this.elem.nativeElement.style.backgroundColor='highlight';
    }
 
-   @Input() defaultColor = '';
+  //  @Input() defaultColor = '';
  
-   @Input() appHighlight = '';
+  //  @Input() appHighlight = '';
  
-   @HostListener("") upVote() {
-    this.highlight(this.appHighlight || this.defaultColor || 'grey');
-  }
+  //  @HostListener("click") upVote() {
+  //   this.highlight();
+  // }
 
-  @HostListener("") downVote() {
-    this.highlight('');
-  }
-  private highlight(color: string) {
-    this.elem.nativeElement.style.backgroundColor = color;
-  }
-}
+//  highlight(){
+//     let array:number[]=[];
+// this.appHighlight.quote.forEach((quote:any) =>
+// quote.appHighlightLiked = false
+// array.push(quote.upVotes)
+// )
+ }
+  // private highlight(color: string) {
+  //   this.elem.nativeElement.style.backgroundColor = color;
+  // }
+  // let max=Math.max(...array)
+  // let i = array.indexOf(max)
+  // this.appHighlight.quote[i].appHighlightLiked = true;
+
+//   ngOnInit(){}
+// }
+// }
